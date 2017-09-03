@@ -4,65 +4,139 @@
 }
 body {
 	font-family: 'Open Sans 700', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	color: #626261;
 	line-height: 1.6em;
 }
 h2, h3 {
 	color: #ff3251;
-	line-height: 2em;
+	margin-bottom: 5px;
+}
+.widewrap {
+	width: 100%;
+	heigth: auto;
+	overflow: hidden;
 }
 .header {
+	min-width: 760px;
 	width: 100%;
-	min-width: 800px;
 	background: url(img/mainbg.jpg) no-repeat;
 	background-size: cover;
 }
-.mainmenuwrap {
-	background-color: #fff;
-	opacity: 0.85;
-}
-.menu {
+
+
+@media screen and (min-width: 480px) {
+	
+	.wrap {
 	width: 100%;
 	max-width: 1147px;
 	margin: 0 auto;
 	padding: 0 10px;
+	text-align: center;
+	overflow: hidden;
+	}
+
+	.wrap800 {
+	max-width: 800px !important;
+	padding: 11vh 0 0 0;
+	}
+
+
+	.allgoods ul {
+	width: 100%;
+	max-width: 1147px;
+	padding: 60[vh 0 10vh 0;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	
+	.wrap {
+	width: 100%;
+	max-width: 479px;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: center;
+	overflow: hidden;
+	}
+
+
+	.allgoods ul {
+	width: 100%;
+	max-width: 479px;
+	padding: 2vh 0 10vh 0;
+	}
+
+}
+
+.opacity {
+	background-color: rgba(255,255,255,0.1);
+}
+.menu {
+	padding: 0 15px;
 	overflow: hidden;
 	line-height: 1em;
 }
-.menu ul {
+.menu ul, .allgoods ul {
 	list-style: none;
 	float: left;
 }
-.menu li {
+.menu ul {
+	float: left;
+}
+.menu li, .allgoods li {
 	display: inline-block;
+}
+.menu li {
 	margin-right: 34px;
 	padding: 26px 0;
 }
-.menu a {
-	text-decoration: none;
-	font-size: 14px;
-	color: #797979;
+.allgoods li {
+	margin: 0 15px;
 }
-a.button {
-	font-size: 10px;
+.menu a, .allgoods a, #allgifts {
+	text-decoration: none;
+}
+.menu a {
+	color: #797979;
+	font-size: 14px;
+}
+.allgoods a, #allgifts {
+	min-width: 105px;
+	font-size: 11px;
 	font-weight: bold;
 	color: #ff3251;
 	display: block;
-	width: 110px;
-	float: right;
-	padding: 14px 38px;
-	border: 2px solid #ff3251;
+	padding: 8px 36px;
+	margin: 0 5px;
+	border: 1.5px solid #ff3251;
 	border-radius: 50px;
-	margin: 16px 0;
 	text-align: center;
 }
-a#active {
+#allgifts {
+	max-width: 105px;
+	width: 100%;
+	margin: 60px auto;
+}
+a.button {
+	min-width: 110px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ff3251;
+	display: block;
+	float: right;
+	padding: 13px 36px;
+	border: 1.5px solid #ff3251;
+	border-radius: 50px;
+	margin: 14px 0;
+	text-align: center;
+}
+.menu a#active {
 	color: #ff3251 !important;
 }
 .promo {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	background-color: rgba(0,0,0,0.4);
 }
 .promo:hover {
@@ -71,23 +145,68 @@ a#active {
 .promo a {
 	display: block;
 	text-decoration: none;
-	padding: 13vw 0;
+	padding: 12vw 0;
 	text-align: center;
-	font-size: 2.4vw;
-	line-height: 2.8vw;
+	font-size: 2.8vw;
+	line-height: 3.8vw;
 	color: #fff;
 	text-shadow: 2px 1px 5px #000;
 }
-.content1, .content2 {
-	width: 100%;
-	max-width: 1147px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 85px 0;
+.inline figure {
+	display: inline-block;
 }
-.content1 p {
-	font-weight: 700;
+.advantages {
+	padding: 20vh 0 8vh 0;
+}
+.advantages figure{
 	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
+	max-width: 240px;
+	vertical-align: top;
+	padding: 10px 15px 30px 15px;
+}
+.advantages span {
+	color: #ff3251;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 2.5em;
+}
+.graybg {
+	background-color: #f4f6f8;
+}
+a#chosen {
+	background-color: #ff3251;
+	color: #fff;
+}
+.whitecards figure {
+	width: 100%;
+	max-width: 264px;
+	height: 373px;
+	background-color: #fff;
+	margin: 0 9px;
+	box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+.whitecards figure>p {
+	margin-bottom: 10px;
+}
+.whitecards figcapture p {
+	font-size: 12px;
+	font-weight: 600;
+}
+.whitecards figcapture p>span {
+	color: #ff3251;
+}
+.float-left {
+	overflow: hidden;
+}
+.float-left div {
+	text-align: left !important;
+	float: left;
+	display: inline-block;
+	margin: 0 1vw;
+}
+.contacts {
+	padding: 40px 30px 4vh 0;
+}
+.route {
 }
