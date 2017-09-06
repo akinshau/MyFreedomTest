@@ -9,48 +9,42 @@ body {
 	line-height: 1.6em;
 }
 h2, h3 {
-	color: #ff3251;
-	margin-bottom: 5px;
+	margin: 5px 0;
+}
+.header, .wrap, .widewrap, .menu, #allgifts, .promo, .advantages figure {
+	width: 100%;
 }
 .widewrap {
-	width: 100%;
 	heigth: auto;
 	overflow: hidden;
 }
 .header {
-	min-width: 840px;
-	width: 100%;
+	min-width: 1147px;
 	background: url(img/mainbg.jpg) no-repeat;
 	background-size: cover;
 }
 .wrap {
-	width: 100%;
-	max-width: 1185px;
+	min-width: 1147px;
 	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
 }
 .wrap800 {
-	max-width: 1000px !important;
-	padding: 11vh 0 0 0;
+	max-width: 800px !important;
+	padding-top: 7em;
 }
 .allgoods ul {
-	width: 100%;
-	max-width: 1147px;
-	padding: 6vh 0 10vh 0;
+	padding: 1.5em 0 8em 0;
 }
 .opacity {
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(255,255,255,0.9);
 	padding: 0 20px;
 }
 .menu {
-	width: 100%;
-	overflow: hidden;
 	line-height: 1em;
 }
 .menu ul, .allgoods ul {
 	list-style: none;
-	float: left;
 }
 .menu ul {
 	float: left;
@@ -76,7 +70,6 @@ h2, h3 {
 	min-width: 105px;
 	font-size: 11px;
 	font-weight: bold;
-	color: #ff3251;
 	display: block;
 	padding: 8px 36px;
 	margin: 12px 0;
@@ -86,14 +79,12 @@ h2, h3 {
 }
 #allgifts {
 	max-width: 105px;
-	width: 100%;
 	margin: 60px auto;
 }
 a.button {
 	min-width: 110px;
 	font-size: 11px;
 	font-weight: bold;
-	color: #ff3251;
 	display: block;
 	float: right;
 	padding: 13px 36px;
@@ -106,7 +97,6 @@ a.button {
 	color: #ff3251 !important;
 }
 .promo {
-	width: 100%;
 	height: auto;
 	background-color: rgba(0,0,0,0.4);
 }
@@ -129,14 +119,12 @@ a.button {
 .advantages {
 	padding: 20vh 0 8vh 0;
 }
-.advantages figure{
-	width: 100%;
+.advantages figure {
 	max-width: 240px;
 	vertical-align: top;
 	padding: 10px 15px 30px 15px;
 }
 .advantages span {
-	color: #ff3251;
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 2.5em;
@@ -149,7 +137,6 @@ a#chosen {
 	color: #fff;
 }
 .whitecards figure {
-	width: 100%;
 	max-width: 264px;
 	height: 373px;
 	background-color: #fff;
@@ -164,20 +151,17 @@ a#chosen {
 	font-size: 12px;
 	font-weight: 600;
 }
-.whitecards figcapture p>span {
+.whitecards figcapture p>span, .advantages span, h2, h3, a.button, .allgoods a, #allgifts {
 	color: #ff3251;
 }
 .float-left {
-	overflow: hidden;
+	float: left;
 }
 .float-left div {
 	text-align: left !important;
-	float: left;
 	display: inline-block;
-	margin: 0 1vw;
+	vertical-align: top;
 }
 .contacts {
-	padding: 40px 30px 4vh 0;
-}
-.route {
+	padding: 20px 20px 0 0;
 }
