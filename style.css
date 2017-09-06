@@ -9,14 +9,10 @@ body {
 	line-height: 1.6em;
 }
 h2, h3 {
-	margin: 5px 0;
+	margin: 40px 0 5px 0;
 }
-.header, .wrap, .widewrap, .menu, #allgifts, .promo, .advantages figure {
+.header, .wrap, .widewrap, .menu, #allgifts, .promo, .advantages figure, .opacity {
 	width: 100%;
-}
-.widewrap {
-	heigth: auto;
-	overflow: hidden;
 }
 .header {
 	min-width: 1147px;
@@ -24,21 +20,18 @@ h2, h3 {
 	background-size: cover;
 }
 .wrap {
-	min-width: 1147px;
+	max-width: 1147px;
 	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
 }
-.wrap800 {
-	max-width: 800px !important;
-	padding-top: 7em;
+.center {
+	text-align: center;
 }
 .allgoods ul {
 	padding: 1.5em 0 8em 0;
 }
 .opacity {
 	background-color: rgba(255,255,255,0.9);
-	padding: 0 20px;
+	overflow: hidden;
 }
 .menu {
 	line-height: 1em;
@@ -48,6 +41,7 @@ h2, h3 {
 }
 .menu ul {
 	float: left;
+	margin-left: 20px;
 }
 .menu li, .allgoods li {
 	display: inline-block;
@@ -63,6 +57,7 @@ h2, h3 {
 	text-decoration: none;
 }
 .menu a {
+	display: block;
 	color: #797979;
 	font-size: 14px;
 }
@@ -90,7 +85,7 @@ a.button {
 	padding: 13px 36px;
 	border: 1.5px solid #ff3251;
 	border-radius: 50px;
-	margin: 14px 0;
+	margin: 14px 20px;
 	text-align: center;
 }
 .menu a#active {
@@ -131,6 +126,7 @@ a.button {
 }
 .graybg {
 	background-color: #f4f6f8;
+	padding: 1px 0;
 }
 a#chosen {
 	background-color: #ff3251;
@@ -140,9 +136,8 @@ a#chosen {
 	max-width: 264px;
 	height: 373px;
 	background-color: #fff;
-	margin: 0 9px;
+	margin: 0 9px 9px 9px;
 	box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
-	overflow: hidden;
 }
 .whitecards figure>p {
 	margin-bottom: 10px;
@@ -154,13 +149,11 @@ a#chosen {
 .whitecards figcapture p>span, .advantages span, h2, h3, a.button, .allgoods a, #allgifts {
 	color: #ff3251;
 }
-.float-left {
-	float: left;
-}
-.float-left div {
+.left div {
 	text-align: left !important;
 	display: inline-block;
 	vertical-align: top;
+	padding: 0 18px;
 }
 .contacts {
 	padding: 20px 20px 0 0;
