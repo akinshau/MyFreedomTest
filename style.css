@@ -14,13 +14,14 @@ h2, h3 {
 .header, .wrap, .widewrap, .menu, #allgifts, .promo, .advantages figure, .opacity {
 	width: 100%;
 }
-.header {
+.widewrap, .wrap {
 	min-width: 1147px;
+}
+.header {
 	background: url(img/mainbg.jpg) no-repeat;
 	background-size: cover;
 }
 .wrap {
-	max-width: 1147px;
 	margin: 0 auto;
 }
 .center {
@@ -35,6 +36,8 @@ h2, h3 {
 }
 .menu {
 	line-height: 1em;
+	max-width: 1147px;
+	margin: 0 auto;
 }
 .menu ul, .allgoods ul {
 	list-style: none;
