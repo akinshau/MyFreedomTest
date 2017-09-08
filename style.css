@@ -9,7 +9,7 @@ body {
 	line-height: 1.6em;
 }
 h2, h3 {
-	margin: 40px 0 5px 0;
+	margin: 85px 0 5px 0;
 }
 .header, .wrap, .widewrap, .menu, #allgifts, .promo, .advantages figure, .opacity {
 	width: 100%;
@@ -112,7 +112,7 @@ a.button {
 	display: inline-block;
 }
 .advantages {
-	padding: 20vh 0 8vh 0;
+	padding: 60px 0 40px 0;
 }
 .advantages figure {
 	max-width: 240px;
